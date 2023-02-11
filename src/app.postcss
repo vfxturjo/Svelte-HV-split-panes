@@ -1,0 +1,19 @@
+/* Write your global styles here, in PostCSS syntax */
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply overflow-hidden m-0 touch-none select-none;
+  }
+  .fullsize {
+    @apply min-h-full min-w-full h-full w-full;
+  }
+  .fullcenter {
+    @apply flex min-h-full min-w-full items-center justify-center bg-gray-300 fullsize;
+  }
+}
